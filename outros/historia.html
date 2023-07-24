@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            background: #383845;
+            color: #fff;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li{
+            list-style-type: none;
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        /* Navegação-Barra */
+
+        .nav-bar {
+            justify-content: space-around;
+            background: #1b1b27;
+            align-items: center;
+            position: fixed;
+            display: flex;
+            height: 9vh;
+            width: 100%;
+            z-index: 1;
+            
+        }
+
+        /* Logo-Futnews */
+
+        .logo {
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            transition: 0.3s;
+            background-color: #1b1b27;
+        }
+
+        .logo:hover{
+            opacity: 0.2;
+        }
+
+        /* Lista-Barra */
+
+        .li-barra {
+            display: flex;
+            background-color: #1b1b27;
+            
+        }
+        
+        .li-barra li {
+            letter-spacing: 3px;
+            margin-left: 32px;
+            background-color:#1b1b27;
+            text-decoration: none;
+        }
+
+        /* Itens-Barra*/
+
+        .li-itens {
+            font-size: 1.8vh;
+            transition: 0.3s;
+            background-color: #1b1b27;
+            position: relative; 
+        }
+
+        .li-itens:hover {
+            opacity: 0.2;
+        }
+
+
+        /* Sub-Menu */
+        .sub-barra {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            top: 40px; 
+            margin-top: 15px;
+            border-radius: 4px;
+            background-color:#1b1b27;
+        }
+
+        .li-sub-item  {
+            background-color:#1b1b27;
+            text-align: center;
+            padding: 14px ;
+            margin-left: -50px;
+            display: block;
+            border-radius: 4px;    
+        }
+
+        .outros:hover .sub-barra{
+            display: block;
+            list-style: none;
+            text-align: center;
+            background-color: #1b1b27;
+            border-radius: 4px;
+        }
+
+        .li-sub-item:hover{
+            background-color:#383845;
+            list-style-position: none;
+            border-radius: 4px;
+        }
+
+        .page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 55px;
+        }
+
+        .text{
+            font-size: 35px;
+            text-indent: 85px;
+        }
+        
+    </style>
+    <title>
+        FutNews
+    </title>
+</head>
+<body>
+    <div class="nav-bar"> 
+        <a class="logo" href="../index.html">FutNews</a>
+        <ul class="li-barra">
+            <li>
+                <a class="li-itens" href="#noticia">
+                    Notícias
+                </a>
+            </li>
+            <li>
+                <a class="li-itens" href="#nacionais">
+                    Times
+                </a>
+            </li>
+            <li>
+                <a class="li-itens" href="#campeonatos">
+                    Campeonatos
+                </a>
+            </li>
+            <li>
+                <a class="li-itens" href="#transferencia">
+                    Transferência
+                </a>
+            </li>
+            <li class="outros">
+                <a class="li-itens" href="#">
+                    Outros
+                </a>
+                <ul class="sub-barra">
+                    <li>
+                        <a class="li-sub-item" href="outros/historia.html">
+                            História
+                        </a>
+                    </li>
+                    <li>
+                        <a class="li-sub-item" href="../outros/lenda.html">
+                            Lendas
+                        </a>
+                    </li>
+                    <li>
+                        <a class="li-sub-item" href="../outros/copas.html">
+                            Copas
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="page-container">
+        <div class="container">
+            <h1 class="titulo">
+                HISTÓRIA DO FUTEBOL
+            </h1>
+            <br>
+            <p class="text">
+                Não se sabe com precisão a data em que o futebol surgiu, porém, o futebol moderno surgiu na Inglaterra durante o século XIX, mas relatos históricos apontam que já existiam práticas esportivas parecidas.
+            </p>
+            <br>
+            <p class="text">
+                Já no Brasil, Charles Miller, um paulista que estudou na Inglaterra, é conhecido pela “importação” oficial do esporte, visto que ao voltar de uma temporada de estudos na Inglaterra em 1874, ele trouxe duas bolas, uma bomba de ar, uniformes e um livro de regras do esporte. E assim o futebol começou no país, que hoje em dia é o PAÍS DO FUTEBOL.
+            </p>
+            <br>
+            <p class="text">
+                Atualmente, grandes competições de futebol são organizadas todos os anos por diferentes entidades futebolísticas (nacionais, continentais ou internacionais).</p>
+        </div>
+    </div>   
+</body>
+</html>

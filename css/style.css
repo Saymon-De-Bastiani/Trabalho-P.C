@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #383845;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Menu-Barra */
+
+.nav-bar {
+    justify-content: space-around;
+    background: #1b1b27;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    height: 9vh;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+/* Logo-Futnews */
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.3s;
+    background-color: #1b1b27;
+}
+
+.logo:hover{
+    opacity: 0.2;
+}
+
+/* Menu-Principal */
+
+.menu-principal {
+    display: flex;
+    background-color: #1b1b27;
+    
+}
+  
+.menu-principal li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    background-color:#1b1b27;
+    text-decoration: none;
+}
+
+/* Itens-Do-Menu*/
+
+.li-itens {
+    font-size: 1.8vh;
+    transition: 0.3s;
+    background-color: #1b1b27;
+    position: relative; 
+}
+
+.li-itens:hover {
+    opacity: 0.2;
+}
+
+
+/* Sub-Menu */
+.sub-barra {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    top: 40px; 
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color:#1b1b27;
+}
+
+.li-sub-item  {
+    background-color:#1b1b27;
+    text-align: center;
+    padding: 14px ;
+    margin-left: -50px;
+    display: block;
+    border-radius: 4px;    
+}
+
+.outros:hover .sub-barra{
+    display: block;
+    list-style: none;
+    text-align: center;
+    background-color: #1b1b27;
+    border-radius: 4px;
+}
+
+.li-sub-item:hover{
+    background-color:#383845;
+    list-style-position: none;
+    border-radius: 4px;
+}
+
+
+/* Notícia Principal */
+
+.news-main img {
+    margin-top: 86px;;
+    width: 100%;
+    float: left;
+    height: auto;
+    cursor: pointer;
+
+}
+  
+.news-main:hover{
+    border: solid #d7d6d6bf;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+.news-main-desc {
+    text-align: center;
+    font-size: 4.0vh;
+    padding: 25px;
+}
+
+/*Jogos da Rodada*/
+
+.news-secon-title{
+    text-align: left;
+    font-size: 4.0vh;
+    padding: 20px;
+}
+
+/* Container das Imagens */
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.news-container .news-item img{
+    width: 580px;
+    height: 360px;
+    border: #9d9393 solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.news-container .news-item:hover {
+    border-color: #e9e4e4; 
+    transform: scale(1.04);
+}
+
+.news-container .news-item .description{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Times */
+
+.team-title{
+    text-align: left;
+    font-size: 4.0vh;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.team-container img {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+    border: #9d9393 solid 2px;
+    border-radius: 45px;
+    background-color: #3a3a41;
+    cursor: pointer;
+}
+
+.team-container img:hover{
+    transition: 0.5s;
+    background-color: #848489;
+    transform: scale(1.04);
+}
+
+/* Campeonatos */
+
+.camp-title{
+    text-align: left;
+    font-size: 4.0vh;
+    padding: 20px;
+}
+
+.camp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.camp-container img {
+    width: 420px;
+    height: 520px;
+    object-fit: cover;
+    border: #9d9393 solid 2px;
+    border-radius: 45px;
+    background-color: #3a3a41;
+    cursor: pointer;
+}
+
+.camp-container img:hover{
+    transition: 0.5s;
+    background-color: #848489;
+    transform: scale(1.04);
+}
+
+/* Transferência */
+
+.trans-title {
+    text-align: left;
+    font-size: 4.0vh;
+    padding: 20px;
+}
+
+.trans-container{
+    position: center;
+
+}
+
+.player{
+    text-align: center;
+    font-size: 4.0vh;
+    padding: 30px;
+}

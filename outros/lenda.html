@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Asterico-Universal */
+
+        * {
+            margin: 0;
+            padding: 0;
+            background: #383845;
+            color: #fff;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li{
+            list-style-type: none;
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        /* Navegação-Barra */
+
+        .nav-bar {
+            justify-content: space-around;
+            background: #1b1b27;
+            align-items: center;
+            position: fixed;
+            display: flex;
+            height: 9vh;
+            width: 100%;
+            z-index: 1;
+            
+        }
+
+        /* Logo-Futnews */
+
+        .logo {
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            transition: 0.3s;
+            background-color: #1b1b27;
+        }
+
+        .logo:hover{
+            opacity: 0.2;
+        }
+
+        /* Lista-Barra */
+
+        .li-barra {
+            display: flex;
+            background-color: #1b1b27;
+            
+        }
+        
+        .li-barra li {
+            letter-spacing: 3px;
+            margin-left: 32px;
+            background-color:#1b1b27;
+            text-decoration: none;
+        }
+
+        /* Itens-Barra*/
+
+        .li-itens {
+            font-size: 1.8vh;
+            transition: 0.3s;
+            background-color: #1b1b27;
+            position: relative; 
+        }
+
+        .li-itens:hover {
+            opacity: 0.2;
+        }
+
+
+        /* Sub-Menu */
+        .sub-barra {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            top: 40px; 
+            margin-top: 15px;
+            border-radius: 4px;
+            background-color:#1b1b27;
+        }
+
+        .li-sub-item  {
+            background-color:#1b1b27;
+            text-align: center;
+            padding: 14px ;
+            margin-left: -50px;
+            display: block;
+            border-radius: 4px;    
+        }
+
+        .outros:hover .sub-barra{
+            display: block;
+            list-style: none;
+            text-align: center;
+            background-color: #1b1b27;
+            border-radius: 4px;
+        }
+
+        .li-sub-item:hover{
+            background-color:#383845;
+            list-style-position: none;
+            border-radius: 4px;
+        }
+
+        .page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-container{
+            display: flex; 
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .imagem{
+            width: 350px;
+            height: 350px;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .text{
+            font-size: 25px;
+            text-indent: 85px;
+        }
+
+        
+    </style>
+    <title>
+        FutNews
+    </title>
+</head>
+<body>
+    <div class="nav-bar"> 
+        <a class="logo" href="../index.html">
+            FutNews
+        </a>
+        <ul class="li-barra">
+            <li>
+                <a class="li-itens" href="#noticia">
+                    Notícias
+                </a>
+            </li>
+            <li>
+                <a class="li-itens" href="#nacionais">
+                    Times
+                </a>
+            </li>
+            <li>
+                <a class="li-itens" href="#campeonatos">
+                    Campeonatos
+                </a>
+            </li>
+            <li>
+                <a class="li-itens" href="#transferencia">
+                    Transferência
+                </a>
+            </li>
+            <li class="outros">
+                <a class="li-itens" href="#">
+                    Outros
+                </a>
+                <ul class="sub-barra">
+                    <li>
+                        <a class="li-sub-item" href="../outros/historia.html">
+                            História
+                        </a>
+                    </li>
+                    <li>
+                        <a class="li-sub-item" href="outros/lenda.html">
+                            Lendas
+                        </a>
+                    </li>
+                    <li>
+                        <a class="li-sub-item" href="../outros/copas.html">
+                            Copas
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="page-container">
+        <div class="container">
+            <br>
+            <h1 class="titulo">
+                LENDAS
+            </h1>
+            
+            <div class="text-container">
+                <div>
+                    <h2>
+                        Edson Arantes do Nascimento (Pelé)
+                    </h2>
+                    <br>
+                    <p class="text">
+                        Edson Arantes do Nascimento, mais conhecido como Pelé, foi um futebolista brasileiro que atuou como atacante. Descrito como o "Rei do Futebol", é amplamente considerado como o maior atleta de todos os tempos. Atuou no Santos, o time que o revelou, e o que se destacou mais. Seus maiores feitos foram suas 3 inesquecíveis Copas do Mundo pelo Brasil.
+                    </p>
+                </div>
+                <img class="imagem" src="../img/object/pele.png">
+            </div>
+            <br>
+            <div class="text-container">
+                <img class="imagem" src="../img/object/marta.jpg">
+                <div>
+                    <h2>
+                        Marta Vieira da Silva (Marta)
+                    </h2>
+                    <br>
+                    <p class="text">
+                        Marta Vieira da Silva (19 de fevereiro de 1986), mais conhecida como Marta, é uma futebolista brasileira que atua como atacante no Orlando Pride. Seus maiores feitos foram seus prêmios de melhor jogadora, eleita 6 vezes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
